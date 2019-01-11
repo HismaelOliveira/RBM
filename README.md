@@ -7,7 +7,7 @@ Intuitively, learning in these models corresponds to associating more likely con
 In these states there are units that we call visible, denoted by <i><b>v</i></b>, and hidden units denoted by <i><b>h</i></b>.  <br/>
 A general model of Boltzmnn Machine is shown below.
 <br/>
-<img src="https://en.wikipedia.org/wiki/File:Boltzmannexamplev1.png">
+<img src="https://matheusfacure.github.io/img/tutorial/rbm/Boltzmann_Machine.png">
 <br/>
 In fact, Boltzmann machines are so complicated that they have yet to prove practical utility. So we will have to restrict them in some way. Restricted Boltzmann Machines fulfill this role. <br/>
 They are Boltzmann Machines on the condition that there are no direct connections between the visible units nor between the hidden ones.
