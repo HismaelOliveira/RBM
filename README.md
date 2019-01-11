@@ -6,12 +6,14 @@ Boltzmann machines are unsupervised, energy-based probabilistic models (or gener
 Intuitively, learning in these models corresponds to associating more likely configurations to lower energy states. <br/>
 In these states there are units that we call visible, denoted by <i><b>v</i></b>, and hidden units denoted by <i><b>h</i></b>.  <br/>
 A general model of Boltzmnn Machine is shown below.
-<img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiCx5HB3OTfAhVIhZAKHa6aA9wQjRx6BAgBEAU&url=https%3A%2F%2Fwww.fabriciobreve.com%2Ftrabalhos%2Fmaquinas_estocasticas.htm&psig=AOvVaw1FLZw7QbibQIknlrwrCbSd&ust=1547261487328434">
-
+<br/>
+<img src="https://en.wikipedia.org/wiki/File:Boltzmannexamplev1.png">
+<br/>
 In fact, Boltzmann machines are so complicated that they have yet to prove practical utility. So we will have to restrict them in some way. Restricted Boltzmann Machines fulfill this role. <br/>
 They are Boltzmann Machines on the condition that there are no direct connections between the visible units nor between the hidden ones.
+<br/>
 <img src="https://matheusfacure.github.io/img/tutorial/rbm/rbm.png">
-
+<br/>
 ## Code
 The code was impplemented using Python 3, and had the follow dependences:<br/>
 <ul>
@@ -23,7 +25,9 @@ The code was impplemented using Python 3, and had the follow dependences:<br/>
 ## Results
 One way to evaluate the RBM is visually, by showing the <i><b>W</i></b> parameters as images. <br/>
 If the training is successful, the weights should contain useful information for modeling the MNIST base digits.
+<br/>
 <img src="https://matheusfacure.github.io/img/tutorial/rbm/resultRBM.png">
+<br/>
 Above, not all weights are easily interpreted. Note how the weights highlighted in red contain black lines at the top or bottom. 
 Black pixels mean negative values in w and can be interpreted as a filter that prevents the passage of information. 
 These black lines then capture information that the digits do not exceed line height. 
